@@ -181,7 +181,7 @@ public class Pantalla_2 extends JFrame {
         javax.swing.table.TableModel model = table.getModel();
 
         
-//        notasNuevasModificadas=alumnoSeleccionado().getNotas();
+        notasNuevasModificadas=alumnoSeleccionado().getNotas();
         
 //        System.out.println("Value of data: ");
 //        for (int i=0; i < numRows; i++) {
@@ -209,15 +209,14 @@ public class Pantalla_2 extends JFrame {
                 if(j==2)valor=Integer.valueOf( model.getValueAt(i, j).toString());                     
             }
             System.out.println();
-//            notasNuevasModificadas.set(1,new Nota(nroExamen, letras, valor));
-            notas().set(i, new Nota(nroExamen, letras, valor));
-           
+            notasNuevasModificadas.set(1,new Nota(nroExamen, letras, valor));
+//              notasNuevasModificadas.set(i, new Nota(nroExamen, letras, valor));       
 //            mostrar(notasNuevas.get(i).toString());
         }
 //        estudiantes().modificarNotasEstudiante(legajoSeleccionado(),notasNuevasModificadas );
     
 //        alumnoSeleccionado().setNotas(notasNuevasModificadas);
-        table=crearTabla();
+       
         System.out.println("-------------------------------------");
         
 	}

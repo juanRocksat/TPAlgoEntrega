@@ -26,7 +26,6 @@ anterior que, ahora, debe mostrar los datos actualizados en la pantalla 2.
 | Nota:   [7             ] |
 +--------------------------+
                  [Siguiente]
- 
 
 #########ENTREGA 2############      
                

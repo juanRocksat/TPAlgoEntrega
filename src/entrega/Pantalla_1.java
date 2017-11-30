@@ -28,7 +28,7 @@ public class Pantalla_1 extends JFrame implements ItemListener
 	public JComboBox comboBox ;
 	
 	public EstudiantesDB estudiantes= new EstudiantesDB();
-	public static Estudiante alumno =EstudiantesDB.buscarEstudiante(3);
+	public  static Estudiante alumno =EstudiantesDB.buscarEstudiante(3);
 	public static int legajo =1; // que esto sea statico quito errores de la nada 
 	
 	public Pantalla_2 pantallaSiguiente=null;

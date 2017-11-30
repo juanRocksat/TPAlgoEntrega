@@ -34,6 +34,5 @@ public class Nota {
 	@Override
 	public String toString() {
 		return "Nota [nroExamen=" + nroExamen + ", descrLetras=" + descrLetras + ", valor=" + valor + "]";
-	}
-	
+	}	
 }
