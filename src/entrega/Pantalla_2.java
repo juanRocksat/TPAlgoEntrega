@@ -62,7 +62,7 @@ public class Pantalla_2 extends JFrame {
 	 * Create the frame.
 	 */
 	public Pantalla_2() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -102,6 +102,15 @@ public class Pantalla_2 extends JFrame {
 		});
 		botonAnterior.setBounds(68, 204, 145, 23);
 		contentPane.add(botonAnterior);
+		
+		JButton btnSalir = new JButton("Salir");
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnSalir.setBounds(345, 238, 89, 23);
+		contentPane.add(btnSalir);
 		
 		
 		capturarEventoEnTabla();
@@ -167,11 +176,11 @@ public class Pantalla_2 extends JFrame {
 //        JScrollPane scrollPane1 = new JScrollPane(table);
         //Add the scroll pane to this window.
 //        setContentPane(scrollPane);   si lo descomento superpondra otro scrollPane y no se vera el label y el boton 
-        addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-                System.exit(0);
-            }
-        });
+        /*addWindowListener(new WindowAdapter() {
+          *  public void windowClosing(WindowEvent e) {
+           *     System.exit(0);
+            *}
+       * }); */
 	}
 //	@SuppressWarnings({ "unused", "null" })
 //	@SuppressWarnings("null")
@@ -215,8 +224,8 @@ public class Pantalla_2 extends JFrame {
         }
 //        estudiantes().modificarNotasEstudiante(legajoSeleccionado(),notasNuevasModificadas );
     
-//        alumnoSeleccionado().setNotas(notasNuevasModificadas);
-       
+        alumnoSeleccionado().setNotas(notasNuevasModificadas);
+        
         System.out.println("-------------------------------------");
         
 	}
@@ -231,5 +240,4 @@ public class Pantalla_2 extends JFrame {
 	public void setNotas(List<Nota> notas) {
 		this.alumnoSeleccionado().setNotas(notas);
 	}
-	
 }

@@ -82,7 +82,8 @@ public class Pantalla_1 extends JFrame implements ItemListener
 					
 					
 					mostrar("legajo seleccionado es : " + legajo+" - "+alumno.getNombre());
-					if(pantallaSiguiente==null )abrirPantallaSiguiente();
+//					if(pantallaSiguiente==null )abrirPantallaSiguiente();
+					abrirPantallaSiguiente();
 					pantallaSiguiente.toFront();
 					
 					setearAlumno(legajo);
